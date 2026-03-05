@@ -1,6 +1,129 @@
+
+/* welcome screen styles */
+
 body {
   background-color: black
 }
 * {
-  cursor: url('green-cursor.png') 0 0, auto;
+  cursor: url('images/green-cursor.png') 0 0, auto;
+}
+
+
+.welcome-text {
+    text-align: center; 
+}
+
+.welcome-text h1 {
+    font-family: Consolas, monospace;
+    color: #00ff00;
+    font-size: 70px;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    height: 70px;
+    background-color: #00ff00;
+    margin-left: 10px;
+    vertical-align: bottom;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }  
+  25%, 75% { opacity: 0; }       
+}
+
+::selection {
+  color: #007500;
+}
+
+/* binary bar styles*/
+
+.binary-bar-left,
+.binary-bar-right {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.binary-bar-left {
+  top: 50px;
+}
+
+.binary-bar-right {
+  bottom: 50px;
+}
+
+.binary-bar-left .binary-track,
+.binary-bar-right .binary-track {
+  display: inline-flex;
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  font-size: 30px;;
+}
+
+.binary-bar-left .binary-track {
+  animation: scroll-left 10s linear infinite;
+}
+
+.binary-bar-right .binary-track {
+  animation: scroll-right 10s linear infinite;
+}
+
+/* binary bar animations*/
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* delpoy website button styles */
+
+.delpoy-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 120px;
+      
+}
+
+.delpoy-btn {
+   appearance: none;           
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  outline: none;              
+  border: none;               
+  background: none; 
+  font-family: Consolas, monospace;
+  font-size: 30px;
+  width: 270px;
+  height: 70px;
+  color: #00ff00;
+  background-color: black;
+  border-style: solid;
+  border-color: #00ff00;
+  border-width: 4px;
+  border-radius: 5px;
+}
+
+/* delpoy button animations */
+
+.delpoy-btn {
+  transition: transform 0.3s ease; 
+}
+
+.delpoy-btn:hover {
+  transform: scale(1.1); 
+}
+
+.delpoy-btn:active {
+  transform: scale(0.85);
 }

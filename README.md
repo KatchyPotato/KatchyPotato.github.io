@@ -1,5 +1,6 @@
 # Website Sandbox
-I am currently learning to code in HTML and CSS. This is my first website set up using Github pages, and will act as a sandbox for website development.
+This is a portfolio website for a final project to demonstrate my skills, certifications, and accomplishments.
+The website uses a programming style, with bright green, black, and the Consolas font. 
 
 - Uses Github pages
 - Uses index.html so Github knows the main file
