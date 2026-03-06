@@ -183,8 +183,6 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
   background-color: #00ff00; 
-  border-radius: 6px;
-  border: 2px solid #111111; 
 }
 
 /* scrollbar for Firefox */
