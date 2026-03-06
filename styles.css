@@ -5,11 +5,30 @@
 
 /* welcome screen styles */
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+body.no-scroll {
+  scrollbar-width: none;
+}
+
 body {
   background-color: black
 }
-* {
+
+html, body {
+  height: 100%;
   cursor: url('images/green-cursor.png') 0 0, auto;
+}
+
+* {
+  cursor: inherit;
+}
+
+/* ensure fixed elements inherit the cursor */
+* {
+  cursor: inherit;
 }
 
 
@@ -139,3 +158,38 @@ button:hover {
 /*==================================
   ALL STYLES FOR WELCOME-SCREEN.HTML
 ===================================*/
+
+.welcome-section h1 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  font-size: 70px;
+  margin-top: 150px;
+  display: inline-block;
+  height: 100vh;
+}
+
+.welcome-section {
+  text-align: center;
+}
+
+/* scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 15px;      
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff00; 
+  border-radius: 6px;
+  border: 2px solid #111111; 
+}
+
+/* scrollbar for Firefox */
+
+* {
+  scrollbar-width: large;               
+  scrollbar-color: #00ff00 #111111;
+}    
