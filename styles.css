@@ -156,21 +156,42 @@ button:hover {
 }
 
 /*==================================
-  ALL STYLES FOR WELCOME-SCREEN.HTML
+  ALL STYLES FOR PORTFOLIO.HTML
 ===================================*/
+
+/* welcome section styles */
+.welcome-section {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+  margin-top: 110px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;      
+  gap: 40px;
+}
 
 .welcome-section h1 {
   font-family: Consolas, monospace;
   color: #00ff00;
   font-size: 70px;
-  margin-top: 150px;
-  display: inline-block;
-  height: 100vh;
+  margin: 0;
 }
 
-.welcome-section {
-  text-align: center;
+.welcome-section h2 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  margin-top: 5px;
 }
+
+.welcome-section img {
+  width: 150px;
+  border-radius: 100px;
+}
+
+/* scrollbar styles*/
 
 /* scrollbar for WebKit browsers */
 ::-webkit-scrollbar {
@@ -191,3 +212,4 @@ button:hover {
   scrollbar-width: large;               
   scrollbar-color: #00ff00 #111111;
 }    
+
