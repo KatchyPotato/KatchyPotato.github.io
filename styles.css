@@ -1,4 +1,6 @@
 
+/* Chat gpt helped with styling */
+
 /*===========================
   ALL STYLES FOR INDEX.HTML 
 =============================*/
@@ -243,9 +245,7 @@ profile section styles
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 50px;
   line-height: 2;
 }
 
@@ -253,4 +253,88 @@ profile section styles
   width: 20px;
   vertical-align: middle;
 }
+
+/*-------------------- 
+socials section styles
+---------------------*/
+
+.socials-section h1 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  background: linear-gradient(to right, 
+              transparent 0%, 
+              #001500 30%, 
+              #001500 70%, 
+              transparent 100%);
+}
+
+.socials-section img {
+  width: 200px;
+  margin: 50px;
+  border-radius: 15px;
+  border: 5px solid #00ff00;
+  transition: transform 0.3s ease;
+}
+
+.socials-section img:hover {
+  transform: scale(1.1); 
+  cursor: url('images/green-pointer.png') 0 0, pointer;
+}
+
+.socials-section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-section img {
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px #00ff00; 
+}
+
+.socials-section img:active {
+  transform: scale(0.85);
+}
+
+/*-------------------- 
+contacts section styles
+---------------------*/
+
+.contacts-section h1 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  background: linear-gradient(to right, 
+              transparent 0%, 
+              #001500 30%, 
+              #001500 70%, 
+              transparent 100%);
+}
+
+.contacts-section h3 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+}
+
+.contacts-section .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
 
