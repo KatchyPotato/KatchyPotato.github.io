@@ -272,9 +272,17 @@ socials section styles
               transparent 100%);
 }
 
+.socials-section h2 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .socials-section img {
   width: 200px;
-  margin: 50px;
+  margin-top: 50px;
   border-radius: 15px;
   border: 5px solid #00ff00;
   transition: transform 0.3s ease;
@@ -289,6 +297,7 @@ socials section styles
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .socials-section img {
@@ -318,7 +327,7 @@ contacts section styles
               transparent 100%);
 }
 
-.contacts-section h3 {
+.contacts-section p {
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
@@ -330,6 +339,60 @@ contacts section styles
   align-items: center;
   gap: 30px;
   margin-top: 50px;
+}
+
+/*--------------------- 
+projects section styles
+----------------------*/
+
+.projects-section h1 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  background: linear-gradient(to right, 
+              transparent 0%, 
+              #001500 30%, 
+              #001500 70%, 
+              transparent 100%);
+}
+
+.projects-section h2 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projects-section .thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.projects-section img {
+  border: 5px solid #00ff00;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+.projects-section img:hover {
+  transform: scale(1.1); 
+  cursor: url('images/green-pointer.png') 0 0, pointer;
+}
+
+.projects-section img {
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px #00ff00; 
+}
+
+.projects-section img:active {
+  transform: scale(0.85);
 }
 
 

@@ -35,5 +35,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // scratch button
+  const scratchImage = document.querySelector(".scratch-button");
+  if (scratchImage) {
+    scratchImage.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("https://scratch.mit.edu/users/Katchy_Potato/", "_blank");
+      }, 350);
+    });
+  }
+
+  // angelic descent button
+  const angelic = document.querySelector(".angelic-descent");
+  if (angelic) {
+    angelic.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("projects/angelic-descent.html", "_blank");
+      }, 350);
+    });
+  }
+
+  // pixel playground button
+  const pixelPlayground = document.querySelector(".pixel-playground");
+  if (pixelPlayground) {
+    pixelPlayground.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("projects/pixel-playground.html", "_blank");
+      }, 350);
+    });
+  }
+
+  //peaches daisies and stars button
+  const peaches= document.querySelector(".peaches-daisies-stars");
+  if (peaches) {
+    peaches.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("projects/peaches-daisies-stars.html", "_blank");
+      }, 350);
+    });
+  }
+
 });
 
