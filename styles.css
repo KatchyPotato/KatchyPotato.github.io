@@ -379,16 +379,12 @@ projects section styles
   border: 5px solid #00ff00;
   border-radius: 15px;
   box-shadow: 0 0 20px #00ff00;
+   transition: transform 0.3s ease;
 }
 
 .projects-section img:hover {
   transform: scale(1.1); 
   cursor: url('images/green-pointer.png') 0 0, pointer;
-}
-
-.projects-section img {
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 20px #00ff00; 
 }
 
 .projects-section img:active {
@@ -420,6 +416,36 @@ pixel art section styles
   text-align: center;
   margin-top: 50px;
 }
+
+.pixel-art-section img {
+  border-radius: 15px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  width: 300px;
+  margin-top: 50px;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center; 
+}
+
+.pixel-art-section .shorten {
+  width: 230px;
+}
+
+.pixel-art-section .shorten2 {
+  width: 150px;
+}
+
+.pixel-art-section img:hover {
+  transform: scale(1.1); 
+}
+
 
 
 
