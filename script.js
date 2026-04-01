@@ -79,5 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  //resume button
+  const resumeButton = document.querySelector(".resume-button");
+  if (resumeButton) {
+    resumeButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("images/resume.png", "_blank");
+      }, 350);
+    });
+  }
+
 });
 

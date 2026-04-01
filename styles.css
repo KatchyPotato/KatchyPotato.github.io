@@ -140,13 +140,10 @@ html, body {
   border-width: 4px;
   border-radius: 5px;
   box-shadow: 0 0 20px #00ff00;
+  transition: transform 0.3s ease; 
 }
 
 /* delpoy button animations */
-
-.deploy-btn {
-  transition: transform 0.3s ease; 
-}
 
 .deploy-btn:hover {
   transform: scale(1.1); 
@@ -513,6 +510,59 @@ certification section styles
   margin-top: 50px;
   font-size: 25px;
 }
+
+/*------------------- 
+resume section styles
+-------------------*/
+
+.resume-section h1 {
+  font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  background: linear-gradient(to right, 
+              transparent 0%, 
+              #001500 30%, 
+              #001500 70%, 
+              transparent 100%);
+}
+
+.resume-section button {
+  font-family: Consolas, monospace;
+  font-size: 30px;
+  width: 270px;
+  height: 70px;
+  color: #00ff00;
+  background-color: black;
+  border-style: solid;
+  border-color: #00ff00;
+  border-width: 4px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #00ff00;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.resume-section a {
+  text-decoration: none;
+}
+
+.resume-section button:hover {
+  transform: scale(1.1); 
+}
+
+.resume-section button:active {
+  transform: scale(0.85);
+}
+
+.resume-section button:hover {
+  cursor: url('images/green-pointer.png') 0 0, pointer; 
+}
+
 
 
 
