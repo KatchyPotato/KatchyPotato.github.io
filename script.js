@@ -85,7 +85,26 @@ document.addEventListener("DOMContentLoaded", () => {
     resumeButton.addEventListener("click", (e) => {
       e.preventDefault();
       setTimeout(() => {
-        window.open("images/resume.png", "_blank");
+        window.open("resume.html", "_blank");
+      }, 350);
+    });
+  }
+
+  //resume clicked
+  const viewer = document.querySelector(".viewer");
+  if (viewer){
+  viewer.addEventListener("click", () => {
+    viewer.classList.toggle("zoomed");
+  });
+}
+
+  //download resume button
+  const downloadButton = document.querySelector(".download-button");
+  if (downloadButton) {
+    downloadButton.addEventListener("click", (e) => {
+      e.preventDefault(); 
+      setTimeout(() => {
+        window.open("images/resume.pdf", "_blank"); 
       }, 350);
     });
   }

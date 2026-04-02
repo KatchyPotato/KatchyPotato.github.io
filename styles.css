@@ -532,8 +532,6 @@ resume section styles
 .resume-section button {
   font-family: Consolas, monospace;
   font-size: 30px;
-  width: 270px;
-  height: 70px;
   color: #00ff00;
   background-color: black;
   border-style: solid;
@@ -547,10 +545,6 @@ resume section styles
   margin-top: 100px;
 }
 
-.resume-section a {
-  text-decoration: none;
-}
-
 .resume-section button:hover {
   transform: scale(1.1); 
 }
@@ -562,6 +556,66 @@ resume section styles
 .resume-section button:hover {
   cursor: url('images/green-pointer.png') 0 0, pointer; 
 }
+
+.resume {
+  border-radius: 15px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 50px auto;
+}
+
+.viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.viewer.zoomed {
+  align-items: flex-start;
+  overflow: visible; 
+}
+
+.viewer.zoomed img {
+  transform: scale(2);
+  transform-origin: top center;
+  cursor: url('images/zoom-out.png') 0 0, zoom-out;
+}
+
+.resume:hover {
+  cursor: url('images/zoom-in.png') 0 0, zoom-in;
+}
+
+.download-button {
+  width: 335px;
+  height: 70px;
+}
+
+.resume-section a {
+  text-decoration: none;
+}
+
+.resume-button {
+  width: 270px;
+  height: 70px;
+}
+
+
+.resume-section .icon {
+  width: 30px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+
+
 
 
 
