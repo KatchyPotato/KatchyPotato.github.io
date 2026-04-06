@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/icon.png" type="image/png">
 </head>
-<body>
+<body id="top">
+    <!-- nav bar -->
+     <nav class="navbar">
+        <a href="#top">To Top</a>
+        <a href="#profile">About Me</a>
+        <a href="#socials">Socials</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contacts">Contacts</a>
+     </nav>
 
     <!-- welcome section --> 
     <div class="welcome-section">
@@ -19,7 +30,7 @@
     </div>
     
     <!-- profile section -->
-    <div class="profile-section">
+    <div id="profile" class="profile-section">
         <h1>About Me</h1>
         <p>
             My name is Judah Gaudy, otherwise known as Katchy Potato online.
@@ -46,7 +57,7 @@
     </div>
     
     <!-- socials section -->
-    <div class="socials-section">
+    <div id="socials" class="socials-section">
         <h1>Socials</h1>
         <h2>See what I've been doing!</h2>
 
@@ -59,7 +70,7 @@
     </div>
 
     <!-- projects section -->
-     <div class="projects-section">
+     <div id="projects" class="projects-section">
         <h1>Projects</h1>
         <h2>Play some of my Scratch games!</h2>
 
@@ -73,7 +84,7 @@
      </div>
 
      <!-- pixel art gallery section-->
-      <div class="pixel-art-section">
+      <div id="gallery" class="pixel-art-section">
         <h1>Pixel Art gallery</h1>
         <h2>See some of my creations!</h2>
             <div class="image-grid">
@@ -103,7 +114,7 @@
       </div>
 
     <!-- certifications and honors section -->
-     <div class="certs-section">
+     <div id="certifications" class="certs-section">
         <h1>Certifications & Honors</h1>
         <h2>See what I've accomplished 2025-2026!</h2>
         <!-- https://devicon.dev/ and https://fonts.google.com/icons for all programming language icons-->
@@ -156,30 +167,32 @@
      </div>
 
      <!-- resume section -->
-      <div class="resume-section">
+      <div id="resume" class="resume-section">
         <h1>Resume</h1>
         <button class="resume-button">View Resume<img src="images/view.svg" class="icon"></button>
         <button class="download-button">Download Resume<img src="images/download.svg" class="icon"></button>
     </div>
 
-
-    <!-- to-top button -->
-
-    <!-- contacts-section (un-comment for very last section, 
-     add "connect with me")--> 
-    <!--<div class="contacts-section">
+     <!-- contacts-section --> 
+    <div id="contacts" class="contacts-section">
         <h1>Contacts</h1>
-        <span class="contacts">-->
+        <h2>Connect With Me!</h2>
+        <div class="contacts">
         <!-- Box Icons for the phone and email icons -->
-         <!--<img src="images/envelope.svg">
+         <img src="images/envelope.svg">
         <p>Email: judahgaudy@gmail.com</p>
        
         <img src="images/phone.svg">
         <p>Phone Number: 623-523-1795</p>
 
-        </span>
-    </div>-->
+        </div>
+    </div>
 
-   <script src="script.js"></script>
+    <!-- to-top button -->
+     <div class="top-button">
+     <button class="to-top">Back To Top<img class="icon" src="images/up-arrow.svg"></button>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

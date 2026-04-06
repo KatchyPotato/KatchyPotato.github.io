@@ -312,13 +312,21 @@ contacts section styles
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 40px;
   background: linear-gradient(to right, 
               transparent 0%, 
               #001500 30%, 
               #001500 70%, 
               transparent 100%);
+}
+
+.contacts-section h2 {
+   font-family: Consolas, monospace;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .contacts-section p {
@@ -332,7 +340,7 @@ contacts section styles
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /*--------------------- 
@@ -530,6 +538,12 @@ resume section styles
 }
 
 .resume-section button {
+   appearance: none;           
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  outline: none;              
+  border: none;               
+  background: none; 
   font-family: Consolas, monospace;
   font-size: 30px;
   color: #00ff00;
@@ -542,19 +556,16 @@ resume section styles
   transition: transform 0.3s ease;
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .resume-section button:hover {
   transform: scale(1.1); 
+  cursor: url('images/green-pointer.png') 0 0, pointer; 
 }
 
 .resume-section button:active {
   transform: scale(0.85);
-}
-
-.resume-section button:hover {
-  cursor: url('images/green-pointer.png') 0 0, pointer; 
 }
 
 .resume {
@@ -598,22 +609,128 @@ resume section styles
   height: 70px;
 }
 
-.resume-section a {
-  text-decoration: none;
-}
-
 .resume-button {
   width: 270px;
   height: 70px;
 }
 
 
-.resume-section .icon {
+.icon {
   width: 30px;
   vertical-align: middle;
   padding-left: 10px;
 }
 
+/*-------------------- 
+top top button styles
+--------------------*/
+
+.to-top {
+  appearance: none;           
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  outline: none;              
+  border: none;               
+  background: none; 
+  font-family: Consolas, monospace;
+  font-size: 30px;
+  color: #00ff00;
+  background-color: black;
+  border-style: solid;
+  border-color: #00ff00;
+  border-width: 4px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #00ff00;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 260px;
+  height: 60px;
+}
+
+.top-button {
+  padding-bottom: 50px;
+}
+
+.to-top:hover {
+  transform: scale(1.1); 
+  cursor: url('images/green-pointer.png') 0 0, pointer; 
+}
+
+.to-top:active {
+  transform: scale(0.85);
+}
+
+/*------------ 
+nav bar styles
+-------------*/
+
+.navbar {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background: #002000e6;
+  padding: 15px;
+  z-index: 1000;
+  border-radius: 15px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  margin-top: 20px;
+  height: 40px;
+  
+}
+
+.navbar a {
+  color: #00ff00;
+  text-decoration: none;
+  font-family: Consolas, monospace;
+  text-shadow: 0 0 20px #00ff00;
+  background: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: transform 0.15s ease;
+}
+
+.navbar a:hover {
+  border-radius: 5px;
+  border: 3px solid #00ff00;
+  padding: 10px;
+  background: #111111;
+  transform: scale(1.1); 
+  cursor: url('images/green-pointer.png') 0 0, pointer; 
+}
+
+.navbar a:active {
+  transform: scale(0.85);
+}
+
+body {
+  padding-top: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.profile-section,
+.socials-section,
+.projects-section,
+.pixel-art-section,
+.certs-section,
+.resume-section,
+.contacts-section {
+  scroll-margin-top: 150px; 
+}
 
 
 

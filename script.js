@@ -109,5 +109,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  //to top button
+  const toTopButton = document.querySelector(".to-top");
+  if (toTopButton) {
+  toTopButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }, 350);
+  });
+}
 });
 
