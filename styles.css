@@ -1,5 +1,5 @@
 
-/* Chat gpt helped with styling */
+/* Chat gpt and claude for help with styling */
 
 /*===========================
   ALL STYLES FOR INDEX.HTML 
@@ -142,6 +142,14 @@ html, body {
   transition: transform 0.3s ease; 
 }
 
+/* mobile */
+@media (max-width: 768px) {
+  .deploy-btn {
+    width: 300px;
+    height: 100px;
+  }
+}
+
 /* delpoy button animations */
 
 .deploy-btn:hover {
@@ -279,6 +287,7 @@ socials section styles
 
 .socials-section img {
   width: 200px;
+  max-width: 100%;
   margin-top: 50px;
   border-radius: 15px;
   border: 5px solid #00ff00;
@@ -296,6 +305,16 @@ socials section styles
   justify-content: center;
   align-items: center;
   gap: 100px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .socials-section .images {
+    flex-direction: column;
+    gap: 50px;
+    width: 100%; 
+    overflow: hidden;
+  }
 }
 
 .socials-section img:active {
@@ -342,6 +361,12 @@ contacts section styles
   margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .contacts-section .contacts{
+    flex-direction: column;
+  }
+}
+
 /*--------------------- 
 projects section styles
 ----------------------*/
@@ -369,18 +394,23 @@ projects section styles
 }
 
 .projects-section .thumbnails {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 50px;
   margin-top: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
 }
 
 .projects-section img {
   border: 5px solid #00ff00;
   border-radius: 15px;
   box-shadow: 0 0 20px #00ff00;
-   transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  width: 90%;
+  max-width: 500px;
 }
 
 .projects-section img:hover {
@@ -477,6 +507,7 @@ certification section styles
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
+  text-align: center;
 }
 
 .certs-section .logo {
@@ -491,6 +522,7 @@ certification section styles
   transition: transform 0.3s ease;
   box-shadow: 0 0 20px #00ff00;
   width: 500px;
+  max-width: 100%;
 }
 
 .certification:hover {
@@ -505,11 +537,30 @@ certification section styles
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .certs-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .certification {
+    width: 80%; 
+  }
+
+  .certs-section h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 .certs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
   gap: 20px;
-  justify-items: center; 
+  justify-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .honors {
@@ -682,6 +733,8 @@ nav bar styles
   box-shadow: 0 0 20px #00ff00;
   margin-top: 20px;
   height: 40px;
+  left: 50%;                   
+  transform: translateX(-50%); 
   
 }
 
@@ -700,7 +753,7 @@ nav bar styles
   transition: transform 0.15s ease;
 }
 
-.navbar a:hover {
+.navbar a:hover, .sidebar a:hover {
   border-radius: 5px;
   border: 3px solid #00ff00;
   padding: 10px;
@@ -709,7 +762,7 @@ nav bar styles
   cursor: url('images/green-pointer.png') 0 0, pointer; 
 }
 
-.navbar a:active {
+.navbar a:active, .sidebar a:active {
   transform: scale(0.85);
 }
 
@@ -729,6 +782,42 @@ html {
 .resume-section,
 .contacts-section {
   scroll-margin-top: 150px; 
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  z-index: 1000;
+  background: #002000e6;
+  border-radius: 15px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.sidebar a {
+  width: 100%;
+  color: #00ff00;
+  text-decoration: none;
+  font-family: Consolas, monospace;
+  text-shadow: 0 0 20px #00ff00;
+  background: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: transform 0.15s ease;
 }
 
 
