@@ -9,9 +9,6 @@
 
 body.no-scroll {
   overflow: hidden;
-}
-
-body.no-scroll {
   scrollbar-width: none;
 }
 
@@ -28,22 +25,27 @@ html, body {
   cursor: inherit;
 }
 
-/* ensure fixed elements inherit the cursor */
-* {
-  cursor: inherit;
-}
-
-.welcome-text {
-    text-align: center; 
+.welcome-container {
+  gap: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .welcome-text h1 {
     font-family: Consolas, monospace;
     color: #00ff00;
     font-size: 70px;
-    margin-top: 150px;
-    display: inline-block;
+    margin: 0;
+    display: flex;
+    align-items: center;
     text-shadow: 0 0 20px #00ff00;
+    text-align: center;
 }
 
 .cursor {
@@ -114,13 +116,6 @@ html, body {
 
 /* delpoy website button styles */
 
-.deploy-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .deploy-btn {
    appearance: none;           
   -webkit-appearance: none;  
@@ -142,13 +137,6 @@ html, body {
   transition: transform 0.3s ease; 
 }
 
-/* mobile */
-@media (max-width: 768px) {
-  .deploy-btn {
-    width: 300px;
-    height: 100px;
-  }
-}
 
 /* delpoy button animations */
 
@@ -204,6 +192,20 @@ welcome section styles
   width: 150px;
   border-radius: 100px;
  
+}
+
+@media (max-height: 500px) {
+  .welcome-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1024px) and (min-height: 601px) {
+  .deploy-btn {
+    width: 300px;
+    height: 100px;
+  }
 }
 
 /* scrollbar styles*/
@@ -307,7 +309,6 @@ socials section styles
   gap: 100px;
 }
 
-/* mobile */
 @media (max-width: 768px) {
   .socials-section .images {
     flex-direction: column;
@@ -797,15 +798,16 @@ html {
   border-radius: 15px;
   border: 5px solid #00ff00;
   box-shadow: 0 0 20px #00ff00;
-  display: flex;
+  display: none;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  right: 10px;
+  justify-content: space-evenly
 
 }
 
 .sidebar a {
-  width: 100%;
+  width: 60%;
   color: #00ff00;
   text-decoration: none;
   font-family: Consolas, monospace;
@@ -813,12 +815,56 @@ html {
   background: none;
   display: flex;
   align-items: center;
-  height: 100%;
-  padding: 0 10px;
   border: 3px solid transparent;
   box-sizing: border-box;
   transition: transform 0.15s ease;
+  height: auto;
+  text-align: center;
+  padding: 0 10px;
 }
+
+.menu {
+  width: 8%;
+  display: none;
+  border-radius: 10px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  background: #002000e6;
+  margin-right: 30px;
+  padding: 5px;
+  transition: transform 0.15s ease;
+}
+
+.close {
+  width: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 5px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  background: #002000e6;
+  transition: transform 0.15s ease;
+}
+
+@media (max-width: 1024px) {
+  .navbar a {
+    display: none;
+  }
+
+  .navbar {
+    border: none;
+    background: none;
+    box-shadow: none;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    margin-top: 20px;
+  }
+}
+
+
 
 
 

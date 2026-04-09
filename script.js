@@ -123,5 +123,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 350);
   });
 }
+
+  // menu button
+  const menu = document.querySelector(".menu")
+  const sidebar = document.querySelector(".sidebar")
+  if (menu && sidebar) {
+    menu.addEventListener("click", (e) => {
+      e.preventDefault();
+      sidebar.style.display = "flex";
+    })
+  }
+  
+  // close button
+  const close = document.querySelector(".close")
+  if (close && sidebar) {
+    close.addEventListener("click", (e) => {
+      e.preventDefault();
+      sidebar.style.display = "none";
+    })
+  }
 });
 
