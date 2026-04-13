@@ -1,11 +1,14 @@
 
 /* Chat gpt and claude for help with styling */
 
-/*===========================
-  ALL STYLES FOR INDEX.HTML 
-=============================*/
+/*=======================
+ALL STYLES FOR INDEX.HTML 
+========================*/
 
-/* welcome screen styles */
+
+/*------------------- 
+welcome screen styles 
+-------------------*/
 
 body.no-scroll {
   overflow: hidden;
@@ -67,8 +70,6 @@ html, body {
   color: #007500;
 }
 
-/* binary bar styles*/
-
 .binary-bar-left,
 .binary-bar-right {
   position: fixed;
@@ -102,8 +103,6 @@ html, body {
   animation: scroll-right 10s linear infinite;
 }
 
-/* binary bar animations*/
-
 @keyframes scroll-left {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -113,8 +112,6 @@ html, body {
   from { transform: translateX(-50%); }
   to   { transform: translateX(0); }
 }
-
-/* delpoy website button styles */
 
 .deploy-btn {
    appearance: none;           
@@ -144,9 +141,6 @@ html, body {
   }
 }
 
-
-/* delpoy button animations */
-
 .deploy-btn:hover {
   transform: scale(1.1); 
 }
@@ -166,9 +160,9 @@ button:hover {
   }
 }
 
-/*==================================
-  ALL STYLES FOR PORTFOLIO.HTML
-===================================*/
+/*===========================
+ALL STYLES FOR PORTFOLIO.HTML
+============================*/
 
 /*-------------------- 
 welcome section styles 
@@ -219,8 +213,6 @@ welcome section styles
  
 }
 
-/* scrollbar styles*/
-
 /* scrollbar for WebKit browsers */
 ::-webkit-scrollbar {
   width: 15px;      
@@ -235,7 +227,6 @@ welcome section styles
 }
 
 /* scrollbar for Firefox */
-
 * {
   scrollbar-width: large;               
   scrollbar-color: #00ff00 #111111;

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //peaches daisies and stars button
+  // peaches daisies and stars button
   const peaches= document.querySelector(".peaches-daisies-stars");
   if (peaches) {
     peaches.addEventListener("click", (e) => {
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //resume button
+  // resume button
   const resumeButton = document.querySelector(".resume-button");
   if (resumeButton) {
     resumeButton.addEventListener("click", (e) => {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //resume clicked
+  // resume clicked
   const viewer = document.querySelector(".viewer");
   if (viewer){
   viewer.addEventListener("click", () => {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 }
 
-  //download resume button
+  // download resume button
   const downloadButton = document.querySelector(".download-button");
   if (downloadButton) {
     downloadButton.addEventListener("click", (e) => {
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //to top button
+  // to top button
   const toTopButton = document.querySelector(".to-top");
   if (toTopButton) {
   toTopButton.addEventListener("click", (e) => {
