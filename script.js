@@ -142,19 +142,5 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.style.display = "none";
     })
   }
-
-  const images = document.querySelectorAll(".image-grid img");
-
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      img.requestFullscreen();
-    });
-  });
-
-  document.addEventListener("click", () => {
-    if (document.fullscreenElement) {
-      document.exitFullscreen();
-    }
-  });
 });
 
