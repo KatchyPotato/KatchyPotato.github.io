@@ -124,7 +124,6 @@ html, body {
   font-size: 30px;
   width: 270px;
   height: 70px;
-  padding: 5px;
   color: #00ff00;
   background-color: black;
   border-style: solid;
@@ -135,12 +134,12 @@ html, body {
   transition: transform 0.3s ease; 
 }
 
-/* @media (max-width: 1368px) {
+@media (max-width: 1368px) {
   .deploy-btn {
     width: 300px;
     height: 100px;
   }
-} */
+}
 
 .deploy-btn:hover {
   transform: scale(1.1); 
