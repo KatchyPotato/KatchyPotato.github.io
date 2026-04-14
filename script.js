@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
   // menu button
-  const menu = document.querySelector(".menu")
-  const sidebar = document.querySelector(".sidebar")
+  const menu = document.querySelector(".menu");
+  const sidebar = document.querySelector(".sidebar");
   if (menu && sidebar) {
     menu.addEventListener("click", (e) => {
       e.preventDefault();
@@ -135,12 +135,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   // close button
-  const close = document.querySelector(".close")
+  const close = document.querySelector(".close");
   if (close && sidebar) {
     close.addEventListener("click", (e) => {
       e.preventDefault();
       sidebar.style.display = "none";
     })
   }
+
+  const images = document.querySelectorAll(".image-grid img");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      img.requestFullscreen();
+    });
+  });
+
+  document.addEventListener("click", () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+  });
 });
 

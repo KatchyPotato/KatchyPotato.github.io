@@ -462,6 +462,11 @@ pixel art section styles
   transition: transform 0.3s ease;
 }
 
+.pixel-art-section img:hover {
+  transform: scale(1.1);
+  cursor: url('images/green-pointer.png') 0 0, pointer; 
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -475,10 +480,6 @@ pixel art section styles
 
 .pixel-art-section .shorten2 {
   width: 150px;
-}
-
-.pixel-art-section img:hover {
-  transform: scale(1.1); 
 }
 
 /*-------------------------- 
@@ -866,7 +867,6 @@ html {
     margin-top: 20px;
   }
 }
-
 
 
 
