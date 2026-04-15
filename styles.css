@@ -18,6 +18,11 @@ body.no-scroll {
 body {
   background-color: black;
   overflow-x: hidden;
+  padding-top: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -230,7 +235,7 @@ welcome section styles
 
 /* scrollbar for Firefox */
 * {
-  scrollbar-width: large;               
+  scrollbar-width: auto;               
   scrollbar-color: #00ff00 #111111;
 }    
 
@@ -269,7 +274,13 @@ profile section styles
 socials section styles
 ---------------------*/
 
-.socials-section h1 {
+.socials-section h1, 
+.contacts-section h1,
+.projects-section h1,
+.pixel-art-section h1,
+.certs-section h1,
+.resume-section h1
+{
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
@@ -283,7 +294,13 @@ socials section styles
               transparent 100%);
 }
 
-.socials-section h2 {
+.socials-section h2,
+.contacts-section h2,
+.projects-section h2,
+.pixel-art-section h2,
+.certs-section h2
+
+{
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
@@ -330,28 +347,6 @@ socials section styles
 contacts section styles
 ---------------------*/
 
-.contacts-section h1 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background: linear-gradient(to right, 
-              transparent 0%, 
-              #001500 30%, 
-              #001500 70%, 
-              transparent 100%);
-}
-
-.contacts-section h2 {
-   font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-}
-
 .contacts-section p {
   font-family: Consolas, monospace;
   color: #00ff00;
@@ -375,28 +370,6 @@ contacts section styles
 /*--------------------- 
 projects section styles
 ----------------------*/
-
-.projects-section h1 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background: linear-gradient(to right, 
-              transparent 0%, 
-              #001500 30%, 
-              #001500 70%, 
-              transparent 100%);
-}
-
-.projects-section h2 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-}
 
 .projects-section .thumbnails {
   display: grid;
@@ -431,28 +404,6 @@ projects section styles
 pixel art section styles
 -----------------------*/
 
-.pixel-art-section h1 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background: linear-gradient(to right, 
-              transparent 0%, 
-              #001500 30%, 
-              #001500 70%, 
-              transparent 100%);
-}
-
-.pixel-art-section h2 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-}
-
 .pixel-art-section img {
   border-radius: 15px;
   border: 5px solid #00ff00;
@@ -485,28 +436,6 @@ pixel art section styles
 /*-------------------------- 
 certification section styles
 ---------------------------*/
-
-.certs-section h1 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background: linear-gradient(to right, 
-              transparent 0%, 
-              #001500 30%, 
-              #001500 70%, 
-              transparent 100%);
-}
-
-.certs-section h2 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-}
 
 .certs-section h3 {
   font-family: Consolas, monospace;
@@ -578,22 +507,8 @@ certification section styles
 resume section styles
 -------------------*/
 
-.resume-section h1 {
-  font-family: Consolas, monospace;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background: linear-gradient(to right, 
-              transparent 0%, 
-              #001500 30%, 
-              #001500 70%, 
-              transparent 100%);
-}
-
 .resume-section button {
-   appearance: none;           
+  appearance: none;           
   -webkit-appearance: none;  
   -moz-appearance: none; 
   outline: none;              
@@ -723,7 +638,6 @@ nav bar styles
 
 .navbar {
   position: fixed;
-  padding: 0;
   top: 0;
   width: 95%;
   display: flex;
@@ -771,14 +685,6 @@ nav bar styles
   transform: scale(0.85);
 }
 
-body {
-  padding-top: 60px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .profile-section,
 .socials-section,
 .projects-section,
@@ -806,7 +712,7 @@ html {
   flex-direction: column;
   align-items: center;
   right: 10px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 
 }
 
