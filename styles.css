@@ -16,12 +16,13 @@ body.no-scroll {
 }
 
 body {
-  background-color: black
+  background-color: black;
+  overflow-x: hidden;
 }
 
 html, body {
   height: 100%;
-  cursor: url('images/green-cursor.png') 0 0, auto;
+  cursor: url("images/green-cursor.png") 0 0, auto;
 }
 
 * {
