@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // guthub button for keyboard
+  if (githubImage) {
+    githubImage.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("https://github.com/KatchyPotato", "_blank");
+        }, 350);
+      }
+    })
+  }
+
   // linkedin button
   const linkedinImage = document.querySelector(".linkedin-button");
   if (linkedinImage) {
@@ -33,6 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7/", "_blank");
       }, 350);
     });
+  }
+
+  // linkedin button for keyboard
+  if (linkedinImage) {
+    linkedinImage.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7/", "_blank");
+        }, 350);
+      }
+    })
   }
 
   // scratch button
@@ -46,6 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // scratch button for keyboard
+  if (scratchImage) {
+    scratchImage.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("https://scratch.mit.edu/users/Katchy_Potato/", "_blank");
+        }, 350);
+      }
+    })
+  }
+
   // angelic descent button
   const angelic = document.querySelector(".angelic-descent");
   if (angelic) {
@@ -55,6 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("projects/angelic-descent.html", "_blank");
       }, 350);
     });
+  }
+
+  // angelic descent button for keyboard
+  if (angelic) {
+    angelic.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("projects/angelic-descent.html", "_blank");
+        }, 350);
+      }
+    })
   }
 
   // pixel playground button
@@ -68,6 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // pixle playground button for keyboard
+  if (pixelPlayground) {
+    pixelPlayground.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("projects/pixel-playground.html", "_blank");
+        }, 350);
+      }
+    })
+  }
+
   // peaches daisies and stars button
   const peaches= document.querySelector(".peaches-daisies-stars");
   if (peaches) {
@@ -77,6 +132,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("projects/peaches-daisies-stars.html", "_blank");
       }, 350);
     });
+  }
+
+  // peaches daisies and stars button for keyboard
+  if (peaches) {
+    peaches.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+        window.open("projects/peaches-daisies-stars.html", "_blank");
+        }, 350);
+      }
+    })
   }
 
   // resume button
@@ -133,15 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.style.display = "flex";
     })
   }
-  
-  // close button
-  const close = document.querySelector(".close");
-  if (close && sidebar) {
-    close.addEventListener("click", (e) => {
-      e.preventDefault();
-      sidebar.style.display = "none";
-    })
-  }
 
   // menu button for keyboard
   if (menu) {
@@ -150,6 +207,15 @@ document.addEventListener("DOMContentLoaded", () => {
         sidebar.style.display = "flex";
       }
     });
+  }
+  
+  // close button
+  const close = document.querySelector(".close");
+  if (close && sidebar) {
+    close.addEventListener("click", (e) => {
+      e.preventDefault();
+      sidebar.style.display = "none";
+    })
   }
 
   // close button for keyboard

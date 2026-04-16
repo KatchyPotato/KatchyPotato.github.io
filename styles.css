@@ -21,7 +21,7 @@ body {
   padding-top: 60px;
 }
 
-:focus {
+:focus-visible {
   outline: 3px solid #00ff00;
   outline-offset: 5px;
 }
