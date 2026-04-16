@@ -21,6 +21,11 @@ body {
   padding-top: 60px;
 }
 
+:focus {
+  outline: 3px solid #00ff00;
+  outline-offset: 5px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,10 +125,9 @@ html, body {
 }
 
 .deploy-btn {
-   appearance: none;           
+  appearance: none;           
   -webkit-appearance: none;  
-  -moz-appearance: none; 
-  outline: none;              
+  -moz-appearance: none;               
   border: none;               
   background: none; 
   font-family: Consolas, monospace;
@@ -510,8 +514,7 @@ resume section styles
 .resume-section button {
   appearance: none;           
   -webkit-appearance: none;  
-  -moz-appearance: none; 
-  outline: none;              
+  -moz-appearance: none;              
   border: none;               
   background: none; 
   font-family: Consolas, monospace;
@@ -598,8 +601,7 @@ top top button styles
 .to-top {
   appearance: none;           
   -webkit-appearance: none;  
-  -moz-appearance: none; 
-  outline: none;              
+  -moz-appearance: none;              
   border: none;               
   background: none; 
   font-family: Consolas, monospace;

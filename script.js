@@ -1,4 +1,4 @@
-// ChatGPT handled a lot of the event listener logic
+// ChatGPT and claude for event listener logic
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -141,6 +141,24 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       sidebar.style.display = "none";
     })
+  }
+
+  // menu button for keyboard
+  if (menu) {
+    menu.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        sidebar.style.display = "flex";
+      }
+    });
+  }
+
+  // close button for keyboard
+  if (close) {
+    close.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        sidebar.style.display = "none";
+      }
+    });
   }
 });
 
