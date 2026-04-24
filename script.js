@@ -226,5 +226,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // set up email and phone
+  const email = "judahgaudy" + "@" + "gmail.com";
+  document.querySelector(".email").textContent = email;
+
+  const phone = "623" + "-523-" + "1795";
+  document.querySelector(".phone").textContent = phone;
 });
 
