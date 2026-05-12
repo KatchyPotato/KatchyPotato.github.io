@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     linkedinImage.addEventListener("click", (e) => {
       e.preventDefault();
       setTimeout(() => {
-        window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7/", "_blank");
+        window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7", "_blank");
       }, 350);
     });
   }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     linkedinImage.addEventListener("keydown", (e) => {
       if (e.key == "Enter") {
         setTimeout(() => {
-        window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7/", "_blank");
+        window.open("https://www.linkedin.com/in/judah-gaudy-7059aa3a7", "_blank");
         }, 350);
       }
     })
