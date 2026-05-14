@@ -315,7 +315,6 @@ socials section styles
 .socials-section img {
   width: 200px;
   max-width: 100%;
-  margin-top: 50px;
   border-radius: 15px;
   border: 5px solid #00ff00;
   transition: transform 0.3s ease;
@@ -329,18 +328,10 @@ socials section styles
 
 .socials-section .images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 100px;
-}
-
-@media (max-width: 768px) {
-  .socials-section .images {
-    flex-direction: column;
-    gap: 50px;
-    width: 100%; 
-    overflow: hidden;
-  }
+  margin-top: 50px;
 }
 
 .socials-section img:active {

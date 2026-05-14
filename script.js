@@ -79,6 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
+  // itch.io button
+  const itchImage = document.querySelector(".itch-button")
+  if (itchImage) {
+    itchImage.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("https://katchy-potato.itch.io/", "_blank");
+      }, 350)
+    })
+  }
+
+  // itch.io button for keyboard
+  if (itchImage) {
+    itchImage.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+          window.open("https://katchy-potato.itch.io/", "_blank");
+        }, 350)
+      }
+    })
+  }
+
   // angelic descent button
   const angelic = document.querySelector(".angelic-descent");
   if (angelic) {
