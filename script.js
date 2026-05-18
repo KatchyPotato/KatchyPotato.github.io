@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadButton.addEventListener("click", (e) => {
       e.preventDefault(); 
       setTimeout(() => {
-        window.open("images/resume.pdf", "_blank"); 
+        window.open("images/resume-download.pdf", "_blank"); 
       }, 350);
     });
   }
