@@ -368,13 +368,13 @@ projects section styles
 
 .projects-section .thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   margin-top: 50px;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   justify-items: center;
+  align-items: center;
 }
 
 .projects-section img {
@@ -382,8 +382,8 @@ projects section styles
   border-radius: 15px;
   box-shadow: 0 0 20px #00ff00;
   transition: transform 0.3s ease;
+  width: 300px;
   width: 90%;
-  max-width: 500px;
 }
 
 .projects-section img:hover {

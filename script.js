@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // pixle playground button for keyboard
+  // pixel playground button for keyboard
   if (pixelPlayground) {
     pixelPlayground.addEventListener("keydown", (e) => {
       if (e.key == "Enter") {
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // peaches daisies and stars button
-  const peaches= document.querySelector(".peaches-daisies-stars");
+  const peaches = document.querySelector(".peaches-daisies-stars");
   if (peaches) {
     peaches.addEventListener("click", (e) => {
       e.preventDefault();
@@ -162,6 +162,28 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.key == "Enter") {
         setTimeout(() => {
         window.open("projects/peaches-daisies-stars.html", "_blank");
+        }, 350);
+      }
+    })
+  }
+
+  // elemental button
+  const elemental = document.querySelector(".elemental");
+  if (elemental) {
+    elemental.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("https://katchy-potato.itch.io/elemental", "_blank");
+      }, 350);
+    })
+  }
+
+  // elemental button for keyboard
+  if (elemental) {
+    elemental.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+          window.open("https://katchy-potato.itch.io/elemental", "_blank");
         }, 350);
       }
     })
