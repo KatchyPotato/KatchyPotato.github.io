@@ -267,6 +267,7 @@ profile section styles
   text-shadow: 0 0 20px #00ff00;
   margin: 50px;
   line-height: 2;
+  text-align: justify;
 }
 
 .profile-section img {
@@ -383,7 +384,6 @@ projects section styles
   box-shadow: 0 0 20px #00ff00;
   transition: transform 0.3s ease;
   width: 300px;
-  width: 90%;
 }
 
 .projects-section img:hover {

@@ -189,6 +189,50 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
+  // fleurs button
+  const fleurs = document.querySelector(".fleurs");
+  if (fleurs) {
+    fleurs.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("https://jg-qatest.com/", "_blank");
+      }, 350);
+    })
+  }
+
+  // fleurs button for keyboard
+  if (fleurs) {
+    fleurs.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+          window.open("https://jg-qatest.com/", "_blank");
+        }, 350);
+      }
+    })
+  }
+
+  // blossom button
+  const blossom = document.querySelector(".blossom");
+  if (blossom) {
+    blossom.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        window.open("https://katchypotato.github.io/White-Blossom/", "_blank");
+      }, 350);
+    })
+  }
+
+  // blossom button for keyboard
+  if (fleurs) {
+    blossom.addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+        setTimeout(() => {
+          window.open("https://katchypotato.github.io/White-Blossom/", "_blank");
+        }, 350);
+      }
+    })
+  }
+
   // resume button
   const resumeButton = document.querySelector(".resume-button");
   if (resumeButton) {
