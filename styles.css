@@ -322,6 +322,14 @@ socials section styles
   box-shadow: 0 0 20px #00ff00; 
 }
 
+.socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .socials-section img:hover {
   transform: scale(1.1); 
   cursor: url('images/green-pointer.png') 0 0, pointer;
@@ -386,6 +394,14 @@ projects section styles
   width: 300px;
 }
 
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .projects-section img:hover {
   transform: scale(1.1); 
   cursor: url('images/green-pointer.png') 0 0, pointer;
@@ -432,7 +448,7 @@ pixel art section styles
 certification section styles
 ---------------------------*/
 
-.certs-section h3 {
+.certs-section, .socials-section, .projects-section h3 {
   font-family: Consolas, monospace;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
